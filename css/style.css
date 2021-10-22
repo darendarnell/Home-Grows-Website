@@ -1,0 +1,292 @@
+:root {
+  --primary-color: #017c6b;
+  --secondary-color: #dd007e;
+  --light-color: #f3f3f3;
+  --dark-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.3;
+}
+
+/* Utility */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 0.5rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.card {
+  background: var(--light-color);
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: var(--light-color) 1px solid;
+  color: var(--primary-color);
+  z-index: 10;
+}
+
+.navbar a {
+  color: var(--primary-color);
+}
+
+.navbar .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .container ul {
+  display: flex;
+}
+
+.navbar .container ul li {
+  padding: 0.75rem;
+}
+
+.navbar .container ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar .container .logo {
+  padding: 0.5rem;
+}
+
+/* Showcase */
+.home-showcase {
+  background-color: var(--dark-color);
+  height: 60vh;
+  position: relative;
+}
+
+.home-showcase:before {
+  content: '';
+  background: url('../img/leaf_and_oil.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.home-showcase .showcase-content {
+  color: white;
+  padding: 2rem;
+  z-index: 1;
+  position: absolute;
+}
+
+.home-showcase .showcase-content h1 {
+  font-size: 3.25rem;
+}
+
+.home-showcase .showcase-content p {
+  font-size: 1.3rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Efficient Design */
+#eff-design {
+  margin: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+
+#eff-design h1 {
+  padding: 0.75rem 0;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+#eff-design-card {
+  box-shadow: -3px 0 5px grey;
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#eff-design-card h2 {
+  padding: 0.75rem 0;
+  margin-top: 1.5rem;
+  font-size: 1.75rem;
+}
+
+#eff-design-card .card-content {
+  margin: 0 2rem;
+  max-width: 450px;
+}
+
+#eff-design-card .card-content a {
+  top: 0.5rem;
+  position: relative;
+  color: var(--secondary-color);
+}
+
+#eff-design-card .img {
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+#eff-design-card img {
+  border-radius: 5px;
+}
+
+/* Flower */
+#flower {
+  padding: 4rem 1rem;
+  border-top: solid 1px #ddd;
+}
+
+#flower h1 {
+  padding: 0.75rem 0;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+#flower h1 + p {
+  text-align: center;
+}
+
+#flower-cards {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#flower-cards img {
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+}
+
+#flower-cards h2 {
+  padding: 1rem;
+  color: var(--primary-color);
+}
+
+#flower-cards .info {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 3rem;
+  align-items: center;
+}
+
+#flower-cards .info .strain {
+  background-color: var(--light-color);
+  padding: 0.4rem 0.7rem;
+  border-radius: 20px;
+}
+
+#flower-cards .btn {
+  margin-top: 1rem;
+  width: 90%;
+  border-radius: 100px;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  background: var(--dark-color);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+footer .logo{
+  padding: 0.5rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer div h3 {
+  font-weight: 900;
+  padding: 0.5rem 0;
+}
+
+footer div input[type="text"] {
+  padding: 0.25rem;
+  width: 100%;
+}
+
+footer .links li {
+  padding: 0.25rem 0;
+}
+
+footer .links li a:hover {
+  color: var(--secondary-color);
+}
+
+footer div form > * {
+  margin: 0.25rem 0;
+}
+
+footer div p {
+  padding-bottom: 0.5rem;
+}
+
+footer > *:last-child {
+  grid-column: 1 / span 4;
+  background: #444;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer > *:last-child p {
+  padding-bottom: 0;
+}

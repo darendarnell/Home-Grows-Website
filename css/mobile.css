@@ -1,0 +1,54 @@
+.navbar .container {
+  display: block;
+  text-align: center;
+}
+
+.navbar .container ul {
+  justify-content: center;
+}
+
+#eff-design-card .img {
+  display: none;
+}
+
+#eff-design-card {
+  text-align: center;
+}
+
+#flower-cards {
+  display: block;
+}
+
+#flower-cards > div {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-color);
+}
+
+footer {
+  display: block;
+  text-align: center;
+}
+
+footer p {
+  padding: 0.5rem 0;
+}
+
+footer .btn {
+  width: 100%;
+}
+
+footer > div {
+  border-bottom: 1px dotted #ccc;
+  padding: 1rem;
+}
+
+footer > *:nth-child(4),
+footer > *:nth-child(5) {
+  border-bottom: none;
+}
+
+@media(max-height: 550px) {
+  .home-showcase {
+    height: 80vh;
+  }
+}
