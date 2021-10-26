@@ -24,6 +24,25 @@
   border-bottom: 1px solid var(--light-color);
 }
 
+/* About */
+#about .container {
+  display: block;
+}
+
+#about img {
+  display: none;
+}
+
+/* Services */
+#services .container {
+  display: block;
+}
+
+#services .card {
+  margin: 2rem 0;
+}
+
+/* Footer */
 footer {
   display: block;
   text-align: center;
